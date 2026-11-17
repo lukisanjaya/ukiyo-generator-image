@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ukiyo-e Studio Generator</title>
+  <style>
+    :root {
+      --bg: #141517;
+      --surface: #1e2024;
+      --surface-hover: #26292e;
+      --border: #2d3138;
+      --text: #f0ede6;
+      --text-muted: #9aa0a6;
+      --cinnabar: #c93b2b;
+      --cinnabar-hover: #dc4634;
+      --cinnabar-light: rgba(201, 59, 43, 0.15);
+      --gold: #d4a359;
+      --success: #34d399;
+      --radius: 12px;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      background: rgba(30, 32, 36, 0.7);
+      backdrop-filter: blur(10px);
+      padding: 16px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-stamp {
+      background-color: var(--cinnabar);
+      color: #fff;
+      font-weight: 900;
+      font-size: 14px;
+      padding: 4px 8px;
+      border-radius: 4px;
+      letter-spacing: 1px;
+    }
+
+    .brand h1 {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-family: var(--font-mono);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 4px 10px;
+      border-radius: 999px;
+      color: var(--text-muted);
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--text-muted);
+    }
+    .badge-dot.online {
+      background: var(--success);
+      box-shadow: 0 0 8px rgba(52, 211, 153, 0.4);
+    }
+
+    main {
+      flex: 1;
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: 460px 1fr;
+      gap: 28px;
+    }
+
+    @media (max-width: 900px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .panel-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    label {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    textarea, input[type="text"], input[type="number"] {
+      width: 100%;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px;
+      color: var(--text);
+      font-size: 14px;
+      transition: border-color 0.15s ease;
+      font-family: inherit;
+    }
+
+    textarea:focus, input:focus {
+      outline: none;
+      border-color: var(--gold);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 90px;
+    }
+
+    .samples {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .sample-chip {
+      background: var(--surface-hover);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 11px;
+      padding: 4px 8px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .sample-chip:hover {
+      color: var(--text);
+      border-color: var(--gold);
+    }
+
+    .ratio-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .ratio-btn {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.15s ease;
+      color: var(--text);
+    }
+
+    .ratio-btn.active {
+      border-color: var(--cinnabar);
+      background: var(--cinnabar-light);
+    }
+
+    .ratio-title {
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+    .ratio-dim {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    .slider-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .slider-row input[type="range"] {
+      flex: 1;
+      accent-color: var(--cinnabar);
+    }
+
+    .slider-val {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      min-width: 24px;
+      text-align: right;
+    }
+
+    .seed-row {
+      display: flex;
+      gap: 8px;
+    }
+
+    /* Style Selector & Picker */
+    .style-selector-box {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .style-cat-badge {
+      font-size: 11px;
+      background: var(--cinnabar-light);
+      color: var(--cinnabar);
+      border: 1px solid var(--cinnabar);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    #styleSearch {
+      padding: 8px 10px;
+      font-size: 12px;
+      margin-bottom: 2px;
+    }
+
+    #styleDropdown {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      font-size: 13px;
+      padding: 4px;
+      max-height: 140px;
+      outline: none;
+    }
+    #styleDropdown option {
+      padding: 6px 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      cursor: pointer;
+    }
+    #styleDropdown option:checked {
+      background-color: var(--cinnabar) !important;
+      color: #fff !important;
+    }
+
+    .selected-style-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .style-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+    }
+
+    .style-swatch-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--gold);
+      display: inline-block;
+    }
+
+    .style-niche-text {
+      font-size: 11px;
+      color: var(--text-muted);
+      max-width: 200px;
+      text-align: right;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .style-prompt-preview {
+      font-size: 11px;
+      line-height: 1.4;
+      color: var(--text-muted);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 8px;
+      max-height: 75px;
+      overflow-y: auto;
+      font-family: var(--font-mono);
+      white-space: pre-wrap;
+    }
+
+    .style-action-row {
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn-copy-style, .btn-insert-style {
+      flex: 1;
+      padding: 7px 10px;
+      font-size: 12px;
+      font-weight: 500;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    .btn-copy-style {
+      background: var(--surface-hover);
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+    .btn-copy-style:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .btn-insert-style {
+      background: var(--cinnabar-light);
+      border: 1px solid var(--cinnabar);
+      color: var(--cinnabar);
+    }
+    .btn-insert-style:hover {
+      background: var(--cinnabar);
+      color: #fff;
+    }
+
+    .btn-secondary {
+      background: var(--surface-hover);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 8px;
+      padding: 0 14px;
+      font-size: 13px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--gold);
+    }
+
+    .btn-generate {
+      background: var(--cinnabar);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 14px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: background 0.15s ease;
+      margin-top: 4px;
+    }
+
+    .btn-generate:hover:not(:disabled) {
+      background: var(--cinnabar-hover);
+    }
+
+    .btn-generate:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    /* Result Preview Area */
+    .preview-panel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 480px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      position: relative;
+    }
+
+    .empty-state {
+      text-align: center;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .empty-icon {
+      font-size: 48px;
+      opacity: 0.5;
+    }
+
+    .spinner-wrap {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      text-align: center;
+    }
+
+    .spinner {
+      width: 44px;
+      height: 44px;
+      border: 3px solid rgba(201, 59, 43, 0.2);
+      border-top-color: var(--cinnabar);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .result-container {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .image-frame {
+      max-width: 100%;
+      max-height: 600px;
+      border-radius: 8px;
+      border: 2px solid var(--border);
+      overflow: hidden;
+      background: #0d0e10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.5);
+    }
+
+    .image-frame img {
+      max-width: 100%;
+      max-height: 580px;
+      display: block;
+      object-fit: contain;
+    }
+
+    .result-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .meta-bar {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 12px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      background: var(--bg);
+      padding: 8px 14px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+    }
+
+    /* History Gallery */
+    .history-section {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 24px 36px 24px;
+    }
+
+    .history-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .history-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 12px;
+    }
+
+    .history-card {
+      aspect-ratio: 9/16;
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      cursor: pointer;
+      position: relative;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    .history-card.ratio-16-9 {
+      aspect-ratio: 16/9;
+    }
+
+    .history-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--gold);
+    }
+
+    .history-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <div class="brand">
+        <span class="brand-stamp">浮世絵</span>
+        <h1>Ukiyo-e Studio</h1>
+      </div>
+      <div id="statusBadge" class="badge">
+        <span class="badge-dot" id="badgeDot"></span>
+        <span id="badgeText">Memeriksa API...</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Left Controls Panel -->
+    <div class="panel">
+      <div class="panel-title">
+        <span>⚙️ Parameter Prompt</span>
+      </div>
+
+      <!-- Style Selector dari Bang-Story -->
+      <div class="form-group style-selector-box">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <label for="styleDropdown">🎨 Pilih Visual Style (<span id="styleCountText">104</span> Style):</label>
+          <span id="selectedCategoryBadge" class="style-cat-badge">2D / Jepang</span>
+        </div>
+        
+        <input type="text" id="styleSearch" placeholder="🔍 Cari nama style (mis: ukiyo, stickman, ghibli, wayang, anime, cyberpunk)..." oninput="filterStyles()">
+        
+        <select id="styleDropdown" size="4" onchange="onSelectStyle(this.value)">
+          <!-- Diisi otomatis dari API /styles -->
+        </select>
+        
+        <div class="selected-style-card" id="selectedStyleCard">
+          <div class="style-card-header">
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span class="style-swatch-dot" id="styleSwatchDot"></span>
+              <strong id="styleNameDisplay">Ukiyo-e Tradisional</strong>
+            </div>
+            <span class="style-niche-text" id="styleNicheDisplay">Sejarah epik, Jepang kuno</span>
+          </div>
+          
+          <div class="style-prompt-preview" id="stylePromptPreview">
+            Pilih style di atas untuk melihat prompt...
+          </div>
+          
+          <div class="style-action-row">
+            <button type="button" class="btn-copy-style" id="btnCopyStyle" onclick="copyCurrentStylePrompt()">
+              📋 Salin Style Prompt
+            </button>
+            <button type="button" class="btn-insert-style" id="btnInsertStyle" onclick="appendStyleToPrompt()">
+              ➕ Sisipkan ke Input Prompt
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="promptInput">Prompt Deskripsi Gambar:</label>
+        <textarea id="promptInput" placeholder="Tuliskan adegan yang diinginkan dalam bahasa Inggris atau Indonesia...">Ancient Kutai kingdom in Borneo, King Mulawarman standing in front of an ancient wooden palace, Mahakam river, traditional Indonesian clothing, historical atmosphere</textarea>
+        
+        <div class="samples">
+          <span class="sample-chip" onclick="setPrompt('Ancient Kutai kingdom in Borneo, King Mulawarman standing in front of an ancient wooden palace, Mahakam river, traditional Indonesian clothing, historical atmosphere')">👑 Kerajaan Kutai</span>
+          <span class="sample-chip" onclick="setPrompt('Majapahit royal naval fleet with large wooden pinisi galleons sailing under dramatic sunset, Java sea, epic historical woodcut print')">⛵ Armada Majapahit</span>
+          <span class="sample-chip" onclick="setPrompt('Mystical Mount Bromo volcanic crater surrounded by sea of sand, ancient Javanese temple shrine, dawn mist, Edo print style')">🌋 Gunung Bromo</span>
+          <span class="sample-chip" onclick="setPrompt('Borobudur temple surrounded by lush tropical morning mist and stone stupas, peaceful sunrise, detailed ukiyo-e woodblock')">🛕 Candi Borobudur</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Format Aspek Rasio:</label>
+        <div class="ratio-grid">
+          <button type="button" class="ratio-btn active" id="btnShorts" onclick="setRatio('9:16')">
+            <span class="ratio-title">📱 YouTube Shorts</span>
+            <span class="ratio-dim">9:16 (512 × 768)</span>
+          </button>
+          <button type="button" class="ratio-btn" id="btnLandscape" onclick="setRatio('16:9')">
+            <span class="ratio-title">🖥️ YouTube Standar</span>
+            <span class="ratio-dim">16:9 (768 × 512)</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div style="display:flex; justify-content:space-between;">
+          <label for="stepsInput">Inference Steps:</label>
+          <span class="slider-val" id="stepsVal">15</span>
+        </div>
+        <div class="slider-row">
+          <input type="range" id="stepsInput" min="8" max="25" value="15" oninput="document.getElementById('stepsVal').innerText = this.value">
+        </div>
+        <small style="color:var(--text-muted); font-size:11px;">12–15 step sudah tajam berkat DPM-Solver++ (hemat CPU VPS).</small>
+      </div>
+
+      <div class="form-group">
+        <label for="seedInput">Seed Visual (Opsional):</label>
+        <div class="seed-row">
+          <input type="number" id="seedInput" placeholder="Acak (kosongkan)" min="0">
+          <button type="button" class="btn-secondary" onclick="randomSeed()">🎲 Acak</button>
+        </div>
+      </div>
+
+      <button id="generateBtn" class="btn-generate" onclick="handleGenerate()">
+        <span>🎨 Buat Gambar Ukiyo-e</span>
+      </button>
+    </div>
+
+    <!-- Right Preview Panel -->
+    <div class="preview-panel" id="previewPanel">
+      <!-- Empty State -->
+      <div class="empty-state" id="emptyState">
+        <div class="empty-icon">🖼️</div>
+        <h3>Belum Ada Gambar yang Dibuat</h3>
+        <p style="font-size:13px; max-width:320px;">
+          Pilih prompt di sebelah kiri dan klik tombol <strong>Buat Gambar Ukiyo-e</strong> untuk memulai.
+        </p>
+      </div>
+
+      <!-- Spinner State -->
+      <div class="spinner-wrap" id="spinnerWrap">
+        <div class="spinner"></div>
+        <div>
+          <h4 style="font-size:16px; margin-bottom:4px;">Sedang Menggambar Ukiyo-e...</h4>
+          <p style="font-size:13px; color:var(--text-muted); margin-bottom:8px;">
+            Inference berjalan di CPU VPS (4 Threads).
+          </p>
+          <div class="badge" id="timerBadge">⏱️ Berjalan: 00:00</div>
+        </div>
+      </div>
+
+      <!-- Result State -->
+      <div class="result-container" id="resultContainer">
+        <div class="image-frame" id="imageFrame">
+          <img id="resultImg" src="" alt="Hasil Ukiyo-e">
+        </div>
+
+        <div class="meta-bar" id="metaBar">
+          <span id="metaDim">Resolusi: -</span>
+          <span id="metaSeed">Seed: -</span>
+          <span id="metaSteps">Steps: -</span>
+          <span id="metaDuration">Waktu: -</span>
+        </div>
+
+        <div class="result-actions">
+          <a id="downloadLink" href="#" download class="btn-generate" style="text-decoration:none; padding:10px 18px; font-size:13px;">
+            ⬇️ Unduh Gambar PNG
+          </a>
+          <button class="btn-secondary" onclick="copyImageUrl()">📋 Salin URL Gambar</button>
+          <button class="btn-secondary" onclick="openFullImage()">🔍 Tampilkan Full</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Recent Outputs Section -->
+  <section class="history-section">
+    <div class="history-title">
+      <span>🕒 Galeri Hasil Sesi Ini</span>
+    </div>
+    <div class="history-grid" id="historyGrid">
+      <!-- History cards inserted via JS -->
+    </div>
+  </section>
+
+  <script>
+    let currentRatio = "9:16";
+    let timerInterval = null;
+    let secondsElapsed = 0;
+    let lastResult = null;
+    let allStyles = [];
+    let selectedStyle = null;
+
+    function setPrompt(text) {
+      document.getElementById('promptInput').value = text;
+    }
+
+    function setRatio(ratio) {
+      currentRatio = ratio;
+      document.getElementById('btnShorts').classList.toggle('active', ratio === '9:16');
+      document.getElementById('btnLandscape').classList.toggle('active', ratio === '16:9');
+    }
+
+    function randomSeed() {
+      const rand = Math.floor(Math.random() * 2147483647);
+      document.getElementById('seedInput').value = rand;
+    }
+
+    // Load styles from API /styles
+    async function loadStyles() {
+      try {
+        const res = await fetch('/styles');
+        if (!res.ok) return;
+        const data = await res.json();
+        allStyles = data.styles || [];
+        const countSpan = document.getElementById('styleCountText');
+        if (countSpan) countSpan.innerText = allStyles.length;
+        renderStyleOptions(allStyles);
+        
+        // Default ke ukiyoe_traditional atau ukiyo_e_edo
+        const def = allStyles.find(s => s.id === 'ukiyoe_traditional' || s.id === 'ukiyo_e_edo') || allStyles[0];
+        if (def) {
+          const select = document.getElementById('styleDropdown');
+          select.value = def.id;
+          onSelectStyle(def.id);
+        }
+      } catch (e) {
+        console.error('Failed to load styles', e);
+      }
+    }
+
+    function renderStyleOptions(styles) {
+      const select = document.getElementById('styleDropdown');
+      select.innerHTML = '';
+      
+      const groups = {
+        'Ukiyo-e & Jepang': styles.filter(s => s.id.includes('ukiyo') || s.id.includes('yamato') || s.id.includes('anime') || s.id.includes('ghibli') || s.id.includes('manga') || s.id.includes('sumi')),
+        '2D & Ilustrasi': styles.filter(s => s.category === '2d' && !s.id.includes('ukiyo') && !s.id.includes('yamato') && !s.id.includes('anime') && !s.id.includes('ghibli') && !s.id.includes('manga') && !s.id.includes('sumi')),
+        '3D Animation': styles.filter(s => s.category === '3d'),
+        'Realistis & Sinematik': styles.filter(s => s.category === 'realistis')
+      };
+
+      for (const [groupName, items] of Object.entries(groups)) {
+        if (items.length === 0) continue;
+        const optgroup = document.createElement('optgroup');
+        optgroup.label = `--- ${groupName} (${items.length}) ---`;
+        items.forEach(st => {
+          const opt = document.createElement('option');
+          opt.value = st.id;
+          opt.textContent = `${st.name} [${st.category.toUpperCase()}]`;
+          optgroup.appendChild(opt);
+        });
+        select.appendChild(optgroup);
+      }
+    }
+
+    function filterStyles() {
+      const q = document.getElementById('styleSearch').value.toLowerCase().trim();
+      if (!q) {
+        renderStyleOptions(allStyles);
+      } else {
+        const filtered = allStyles.filter(s => 
+          s.name.toLowerCase().includes(q) || 
+          s.id.toLowerCase().includes(q) || 
+          (s.niche && s.niche.toLowerCase().includes(q))
+        );
+        renderStyleOptions(filtered);
+        if (filtered.length > 0) {
+          document.getElementById('styleDropdown').value = filtered[0].id;
+          onSelectStyle(filtered[0].id);
+        }
+      }
+    }
+
+    function onSelectStyle(styleId) {
+      const st = allStyles.find(s => s.id === styleId);
+      if (!st) return;
+      selectedStyle = st;
+      
+      document.getElementById('styleNameDisplay').innerText = st.name;
+      document.getElementById('styleNicheDisplay').innerText = st.niche || '';
+      document.getElementById('stylePromptPreview').innerText = st.prompt;
+      document.getElementById('selectedCategoryBadge').innerText = st.category.toUpperCase();
+      if (st.swatch) {
+        document.getElementById('styleSwatchDot').style.background = st.swatch;
+      }
+    }
+
+    function copyCurrentStylePrompt() {
+      if (!selectedStyle) return;
+      navigator.clipboard.writeText(selectedStyle.prompt).then(() => {
+        const btn = document.getElementById('btnCopyStyle');
+        const orig = btn.innerHTML;
+        btn.innerHTML = "✅ Style Prompt Tersalin!";
+        setTimeout(() => { btn.innerHTML = orig; }, 2000);
+      });
+    }
+
+    function appendStyleToPrompt() {
+      if (!selectedStyle) return;
+      const area = document.getElementById('promptInput');
+      const current = area.value.trim();
+      if (current) {
+        area.value = `${current}, ${selectedStyle.prompt}`;
+      } else {
+        area.value = selectedStyle.prompt;
+      }
+      area.focus();
+      const btn = document.getElementById('btnInsertStyle');
+      const orig = btn.innerHTML;
+      btn.innerHTML = "✅ Disisipkan ke Input!";
+      setTimeout(() => { btn.innerHTML = orig; }, 1500);
+    }
+
+    // Check /health on load
+    async function checkHealth() {
+      const badge = document.getElementById('statusBadge');
+      const dot = document.getElementById('badgeDot');
+      const text = document.getElementById('badgeText');
+
+      try {
+        const res = await fetch('/health');
+        if (!res.ok) throw new Error('API error');
+        const data = await res.json();
+        if (data.model_loaded) {
+          dot.className = 'badge-dot online';
+          text.innerText = `Online (${data.device.toUpperCase()} ${data.cpu_threads || 4}T)`;
+        } else {
+          dot.className = 'badge-dot';
+          text.innerText = 'Model Sedang Dimuat...';
+        }
+      } catch (err) {
+        dot.className = 'badge-dot';
+        text.innerText = 'Server Offline';
+      }
+    }
+
+    async function handleGenerate() {
+      const prompt = document.getElementById('promptInput').value.trim();
+      if (!prompt) {
+        alert("Silakan masukkan prompt deskripsi gambar.");
+        return;
+      }
+
+      const steps = parseInt(document.getElementById('stepsInput').value, 10);
+      const seedVal = document.getElementById('seedInput').value;
+      const seed = seedVal !== "" ? parseInt(seedVal, 10) : null;
+
+      const btn = document.getElementById('generateBtn');
+      const emptyState = document.getElementById('emptyState');
+      const spinnerWrap = document.getElementById('spinnerWrap');
+      const resultContainer = document.getElementById('resultContainer');
+      const timerBadge = document.getElementById('timerBadge');
+
+      btn.disabled = true;
+      btn.innerText = "⏳ Sedang Mengantre & Menghasilkan...";
+      emptyState.style.display = "none";
+      resultContainer.style.display = "none";
+      spinnerWrap.style.display = "flex";
+
+      secondsElapsed = 0;
+      timerBadge.innerText = "⏱️ Berjalan: 00:00";
+      clearInterval(timerInterval);
+      timerInterval = setInterval(() => {
+        secondsElapsed++;
+        const mins = String(Math.floor(secondsElapsed / 60)).padStart(2, '0');
+        const secs = String(secondsElapsed % 60).padStart(2, '0');
+        timerBadge.innerText = `⏱️ Berjalan: ${mins}:${secs}`;
+      }, 1000);
+
+      const startTime = performance.now();
+
+      try {
+        const payload = {
+          prompt: prompt,
+          ratio: currentRatio,
+          steps: steps,
+          seed: seed,
+          style_id: selectedStyle ? selectedStyle.id : null,
+          style_prompt: selectedStyle ? selectedStyle.prompt : null
+        };
+
+        const res = await fetch('/generate', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        if (!res.ok) {
+          const errData = await res.json().catch(() => ({}));
+          throw new Error(errData.detail || `Server error (${res.status})`);
+        }
+
+        const data = await res.json();
+        lastResult = data;
+        const durationSec = Math.round((performance.now() - startTime) / 1000);
+
+        // Render result
+        document.getElementById('resultImg').src = data.image_url;
+        document.getElementById('downloadLink').href = data.image_url;
+        document.getElementById('downloadLink').download = data.filename;
+        document.getElementById('metaDim').innerText = `Resolusi: ${data.width} × ${data.height}`;
+        document.getElementById('metaSeed').innerText = `Seed: ${data.seed}`;
+        document.getElementById('metaSteps').innerText = `Steps: ${data.steps}`;
+        document.getElementById('metaDuration').innerText = `Waktu: ${durationSec}s`;
+
+        spinnerWrap.style.display = "none";
+        resultContainer.style.display = "flex";
+
+        addToHistory(data);
+
+      } catch (err) {
+        alert("Gagal menghasilkan gambar: " + err.message);
+        spinnerWrap.style.display = "none";
+        emptyState.style.display = "flex";
+      } finally {
+        clearInterval(timerInterval);
+        btn.disabled = false;
+        btn.innerHTML = "<span>🎨 Buat Gambar Ukiyo-e</span>";
+      }
+    }
+
+    function addToHistory(item) {
+      const historyGrid = document.getElementById('historyGrid');
+      const card = document.createElement('div');
+      card.className = `history-card ${item.ratio === '16:9' ? 'ratio-16-9' : ''}`;
+      card.title = `Seed: ${item.seed} | ${item.width}x${item.height}`;
+      card.innerHTML = `<img src="${item.image_url}" alt="Output Ukiyo-e">`;
+      card.onclick = () => {
+        document.getElementById('resultImg').src = item.image_url;
+        document.getElementById('downloadLink').href = item.image_url;
+        document.getElementById('downloadLink').download = item.filename;
+        document.getElementById('metaDim').innerText = `Resolusi: ${item.width} × ${item.height}`;
+        document.getElementById('metaSeed').innerText = `Seed: ${item.seed}`;
+        document.getElementById('metaSteps').innerText = `Steps: ${item.steps || '-'}`;
+        document.getElementById('emptyState').style.display = "none";
+        document.getElementById('spinnerWrap').style.display = "none";
+        document.getElementById('resultContainer').style.display = "flex";
+      };
+      historyGrid.prepend(card);
+    }
+
+    function copyImageUrl() {
+      if (!lastResult) return;
+      navigator.clipboard.writeText(lastResult.image_url);
+      alert("URL gambar berhasil disalin: " + lastResult.image_url);
+    }
+
+    function openFullImage() {
+      if (!lastResult) return;
+      window.open(lastResult.image_url, '_blank');
+    }
+
+    // Initialize
+    checkHealth();
+    loadStyles();
+    loadRecent();
+    setInterval(checkHealth, 10000);
+
+    async function loadRecent() {
+      try {
+        const res = await fetch('/recent');
+        if (!res.ok) return;
+        const data = await res.json();
+        if (data.images && data.images.length > 0) {
+          const historyGrid = document.getElementById('historyGrid');
+          historyGrid.innerHTML = '';
+          data.images.forEach(img => {
+            addToHistory({
+              image_url: img.image_url,
+              filename: img.filename,
+              width: 512,
+              height: 768,
+              seed: '-'
+            });
+          });
+        }
+      } catch (e) {}
+    }
+  </script>
+</body>
+</html>

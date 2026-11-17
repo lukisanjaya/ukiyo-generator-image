@@ -1,0 +1,1042 @@
+[
+  {
+    "id": "stickman",
+    "name": "Stickman berwarna",
+    "category": "2d",
+    "niche": "Sejarah, kisah nyata, konspirasi",
+    "swatch": "#F2B266",
+    "ink": "#1F1D1A",
+    "prompt": "2D flat vector illustration frame for a YouTube storytelling video. Colorful, detailed flat background (never plain white). ALL characters are simple STICKMAN figures: thin black line bodies, arms and legs, plain round white heads with minimal cartoon faces (dot eyes, small eyebrows, simple mouth), no realistic anatomy. Each stickman wears only small costume pieces that match their role (hat, crown, sash, headcloth, props) while the stick body stays visible. Clean bold outlines, flat colors with light soft shading, every character in the same consistent stickman style, cinematic composition with depth. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a stickman figure with a round white head and thin black line limbs, wearing role-specific costume pieces"
+  },
+  {
+    "id": "faceless_stickman",
+    "name": "Faceless Stickman Sinematik",
+    "category": "2d",
+    "niche": "OverSimplified, Casually Explained, sejarah santai",
+    "swatch": "#F4A261",
+    "ink": "#1F1D1A",
+    "prompt": "Cinematic 2D flat vector YouTube storytelling scene, colorful detailed flat background with depth and perspective. All characters are minimalist stickman figures: clean black line bodies, round white blank heads with simple dot eyes, wearing recognizable small costume accessories for their roles. Clean bold outlines, flat colors with subtle soft shading. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a minimalist stickman figure with a blank round white head and clean black line limbs, wearing iconic role costume pieces"
+  },
+  {
+    "id": "flat",
+    "name": "Kartun flat",
+    "category": "2d",
+    "niche": "Sains, fakta, edukasi",
+    "swatch": "#8CCBE3",
+    "ink": "#1F1D1A",
+    "prompt": "Flat vector explainer illustration, bold geometric shapes, a limited harmonious color palette, clean lines, friendly cartoon characters with simple features, soft subtle grain texture, clear readable composition. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a friendly flat vector cartoon character with simple geometric features"
+  },
+  {
+    "id": "vector_kurzgesagt",
+    "name": "Kurzgesagt Cosmic Flat",
+    "category": "2d",
+    "niche": "Sains mendalam, astronomi, evolusi, masa depan",
+    "swatch": "#3A86FF",
+    "ink": "#FAF7F2",
+    "prompt": "Kurzgesagt-inspired flat vector scientific illustration, bold geometric shapes, rich radiant color gradients on deep background, lineless minimalist aesthetic, crisp vector art, cosmic and educational visual style. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a cute lineless vector character constructed from simple geometric shapes with vibrant smooth gradients"
+  },
+  {
+    "id": "whiteboard",
+    "name": "Whiteboard doodle",
+    "category": "2d",
+    "niche": "Tutorial, bisnis, alur ide",
+    "swatch": "#FFFFFF",
+    "ink": "#1F1D1A",
+    "prompt": "Hand-drawn whiteboard doodle, black marker line art on a clean white board, one accent color used sparingly (red or blue), simple sketchy characters, arrows and small icons, like a whiteboard animation explainer. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a simple hand-drawn marker doodle character"
+  },
+  {
+    "id": "monoline_minimalist",
+    "name": "Minimalist Monoline",
+    "category": "2d",
+    "niche": "Psikologi, quotes bijak, arsitektur",
+    "swatch": "#EAE2B7",
+    "ink": "#1F1D1A",
+    "prompt": "Minimalist continuous single-line art illustration, elegant clean black line drawing, soft organic terracotta and beige color shapes in background, sophisticated minimalist gallery aesthetic. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a minimalist figure drawn with an elegant single continuous black line outline"
+  },
+  {
+    "id": "isometric_infographic",
+    "name": "Isometrik 2D Infografis",
+    "category": "2d",
+    "niche": "Bisnis, server teknologi, ekonomi, diagram",
+    "swatch": "#43AA8B",
+    "ink": "#1F1D1A",
+    "prompt": "Clean 2D isometric vector scene, precise 30-degree isometric projection, detailed miniature city blocks or office workspaces, harmonious corporate vector color palette, crisp geometric accuracy. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a tiny stylized isometric vector human character standing in an isometric perspective"
+  },
+  {
+    "id": "rubber_hose_1930",
+    "name": "Rubber Hose 1930s (Cuphead)",
+    "category": "2d",
+    "niche": "Animasi kartun jadul, komedi slapstick, musik",
+    "swatch": "#E9D8A6",
+    "ink": "#1F1D1A",
+    "prompt": "1930s vintage rubber hose animation frame, bendy noodle arms and legs, pie-cut pacman cartoon eyes, white cartoon gloves, sepia and monochrome film grain, aged celluloid projector dust and scratches, retro cartoon aesthetic. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a 1930s rubber-hose cartoon character with bendy noodle limbs and classic white gloves"
+  },
+  {
+    "id": "storytime_animator",
+    "name": "Storytime Marshmallow",
+    "category": "2d",
+    "niche": "Pengalaman hidup, komedi personal, opini",
+    "swatch": "#F8F9FA",
+    "ink": "#1F1D1A",
+    "prompt": "YouTube storytime animator illustration style, charming marshmallow-like cartoon figure, clean black outlines, expressive animated facial expression, simple cheerful flat-color room background, fun and relatable digital art look. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a simple white marshmallow-like cartoon person with expressive comedic cartoon eyes and mouth"
+  },
+  {
+    "id": "pop_art_comic",
+    "name": "Pop Art Lichtenstein",
+    "category": "2d",
+    "niche": "Kritik sosial, tren budaya populer, fakta selebriti",
+    "swatch": "#E63946",
+    "ink": "#FAF7F2",
+    "prompt": "Roy Lichtenstein pop art illustration, bold heavy black outlines, bright primary colors of red, yellow, and blue, iconic Ben-Day halftone dot screening, high impact graphic design composition. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a dramatic pop-art figure with heavy black contour lines and Ben-Day dot shading"
+  },
+  {
+    "id": "silhouette_shadow",
+    "name": "Siluet Wayang & Bayangan",
+    "category": "2d",
+    "niche": "Horor mistis, dongeng nusantara, mitos",
+    "swatch": "#9D0208",
+    "ink": "#FAF7F2",
+    "prompt": "Dramatic shadow puppet silhouette art, intricate pure black paper-cut silhouettes in foreground, glowing atmospheric sunset gradient sky behind, deep mist, high contrast mythical folklore aesthetic. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "an intricate black silhouette figure with detailed clothing contours against glowing backlight"
+  },
+  {
+    "id": "chalkboard_sketch",
+    "name": "Kapur Tulis Papan Hitam",
+    "category": "2d",
+    "niche": "Fisika, rumus, teori konspirasi, kelas sekolah",
+    "swatch": "#202C26",
+    "ink": "#FAF7F2",
+    "prompt": "Hand-drawn white chalk illustration on a dark vintage green chalkboard, textured chalk smudges and eraser dust, sketchy hand-drawn diagrams and character doodles, authentic classroom aesthetic. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a figure sketched in rough white chalk lines on a textured chalkboard"
+  },
+  {
+    "id": "thick_marker",
+    "name": "Spidol Tebal Editorial",
+    "category": "2d",
+    "niche": "Tips produktivitas, majalah visual, ringkasan buku",
+    "swatch": "#FFE66D",
+    "ink": "#1F1D1A",
+    "prompt": "Bold chisel-tip black marker drawing on sketch paper, energetic confident strokes, limited palette of vibrant spot colors, modern editorial magazine illustration style, crisp and readable. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a character drawn with thick black marker strokes and vibrant simple color fills"
+  },
+  {
+    "id": "anime",
+    "name": "Anime",
+    "category": "2d",
+    "niche": "Drama, motivasi, fiksi",
+    "swatch": "#F5C3CD",
+    "ink": "#1F1D1A",
+    "prompt": "High-quality anime film still, clean cel shading, expressive characters, detailed painted background, cinematic lighting and color. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "an anime character with clean cel shading"
+  },
+  {
+    "id": "ghibli_nostalgic",
+    "name": "Studio Ghibli Nostalgic",
+    "category": "2d",
+    "niche": "Kehidupan perdesaan, alam, dongeng magis, petualangan",
+    "swatch": "#87C38F",
+    "ink": "#1F1D1A",
+    "prompt": "Classic Studio Ghibli anime film still, painted lush green landscapes, soft watercolor textures, volumetric fluffy clouds in a bright blue sky, nostalgic and cozy atmosphere, hand-drawn anime aesthetic, warm sunlight, gentle cinematic composition. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a lovable Studio Ghibli anime character with expressive round eyes and simple warm costume"
+  },
+  {
+    "id": "shinkai_aesthetic",
+    "name": "Makoto Shinkai Sky Aesthetic",
+    "category": "2d",
+    "niche": "Drama romantis, sinematografi langit, renungan emosional",
+    "swatch": "#4A7BB0",
+    "ink": "#FAF7F2",
+    "prompt": "Makoto Shinkai modern anime visual style, breathtaking cinematic lighting, hyper-detailed twilight sky with violet and amber gradients, soft anamorphic lens flare, glowing dust particles, pristine atmospheric reflection. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a detailed modern anime character with expressive emotive eyes and crisp hair highlights"
+  },
+  {
+    "id": "retro_anime_90s",
+    "name": "90s Retro Cel Anime",
+    "category": "2d",
+    "niche": "Nostalgia 90-an, sci-fi jadul, aksi detektif",
+    "swatch": "#D48BA5",
+    "ink": "#1F1D1A",
+    "prompt": "Authentic 1990s retro anime cel screenshot, hand-painted cel animation look, soft VHS grain texture, classic bold ink lines, muted vintage color palette, nostalgic 90s aesthetic. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a 1990s vintage anime character with classic cel-shaded coloring and feathered hair"
+  },
+  {
+    "id": "manga_screentone",
+    "name": "Manga Shonen Screentone",
+    "category": "2d",
+    "niche": "Pertarungan aksi, biografi komik, cerita pahlawan",
+    "swatch": "#333333",
+    "ink": "#FAF7F2",
+    "prompt": "Black and white Japanese manga page panel, dynamic G-pen ink linework, authentic halftone screentone dot shading, high contrast deep blacks, explosive speed lines, dramatic camera angle. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a black and white manga hero drawn with sharp G-pen ink lines and screentone dot shading"
+  },
+  {
+    "id": "chibi_kawaii",
+    "name": "Chibi Kawaii Minimalist",
+    "category": "2d",
+    "niche": "Fakta lucu, konten ramah anak, komedi imut",
+    "swatch": "#FFB5C5",
+    "ink": "#1F1D1A",
+    "prompt": "Super cute Japanese chibi illustration, oversized round head with tiny body, cheerful oversized sparkling eyes, soft pastel colors, thick rounded outlines, playful and adorable mood, clean minimalist background. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "an adorable chibi character with a huge head, tiny body, and big sparkling eyes"
+  },
+  {
+    "id": "cyberpunk_anime",
+    "name": "Cyberpunk Dark Anime",
+    "category": "2d",
+    "niche": "Dystopia, bahaya AI, teknologi gelap, hacker",
+    "swatch": "#1E1233",
+    "ink": "#E0B0FF",
+    "prompt": "Dark cyberpunk anime frame, gritty high-tech urban dystopia, rain-slicked streets reflecting vivid neon magenta and electric cyan lights, dense mechanical details, cinematic noir shadows. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a gritty cyberpunk anime character wearing high-tech streetwear or cybernetic gear"
+  },
+  {
+    "id": "ukiyoe_traditional",
+    "name": "Ukiyo-e Woodblock Print",
+    "category": "2d",
+    "niche": "Sejarah samurai, cerita rakyat Asia, mitologi",
+    "swatch": "#C49A45",
+    "ink": "#1F1D1A",
+    "prompt": "Traditional Japanese Ukiyo-e woodblock print illustration, Edo period woodcut style, authentic aged washi paper texture, bold black contour lines, stylized waves and swirling clouds, earthy mineral pigments. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a figure depicted in traditional Edo-period woodblock print style with flat stylized features"
+  },
+  {
+    "id": "dark_shonen",
+    "name": "Dark Shonen Fantasy",
+    "category": "2d",
+    "niche": "Misteri monster, pertarungan gelap, perang epik",
+    "swatch": "#2B2D42",
+    "ink": "#FAF7F2",
+    "prompt": "Grimdark shonen anime illustration, deep desaturated color palette, intense atmospheric shadows, subtle smoky mystical embers, dramatic rim lighting, gritty hand-drawn textures, high tension composition. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a stoic dark fantasy warrior with intense eyes and weathered travel clothes"
+  },
+  {
+    "id": "shojo_dreamy",
+    "name": "Shojo Dreamy Pastel",
+    "category": "2d",
+    "niche": "Romansa, puisi visual, kisah inspiratif emosional",
+    "swatch": "#E8C5E5",
+    "ink": "#1F1D1A",
+    "prompt": "Dreamy shojo manga color illustration, delicate glowing sparkles, soft floating floral petals, ethereal watercolor wash background, gentle romantic lighting, pastel lavender and peach hues. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "an ethereal character with gentle expressive eyes, soft wavy hair, and delicate clothing"
+  },
+  {
+    "id": "lofi_chill",
+    "name": "Lofi Chill Bedroom Anime",
+    "category": "2d",
+    "niche": "Produktivitas santai, kesehatan mental, musik lofi",
+    "swatch": "#6D597A",
+    "ink": "#FAF7F2",
+    "prompt": "Lofi hip-hop anime aesthetic frame, cozy dimly lit interior room at night, warm incandescent desk lamp glow, potted plants on windowsill, gentle purple and amber color palette, relaxed and tranquil mood. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a relaxed modern character in comfortable hoodie or sweater, cozy lofi aesthetic"
+  },
+  {
+    "id": "watercolor",
+    "name": "Buku cerita cat air",
+    "category": "2d",
+    "niche": "Dongeng anak, religi, fabel",
+    "swatch": "#CFE3B5",
+    "ink": "#1F1D1A",
+    "prompt": "Children's storybook watercolor illustration, soft washes on textured paper, warm pastel palette, cute expressive characters, whimsical and cozy mood. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a cute storybook watercolor character"
+  },
+  {
+    "id": "storybook_classic",
+    "name": "Beatrix Potter Klasik",
+    "category": "2d",
+    "niche": "Kisah fabel klasik, peternakan, dongeng moral",
+    "swatch": "#BACBA9",
+    "ink": "#1F1D1A",
+    "prompt": "Classic English children's storybook watercolor, Beatrix Potter style, delicate ink pen outlines, soft translucent watercolor washes, warm cream textured paper, quaint countryside charm. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a whimsical storybook character rendered in delicate ink and gentle watercolor wash"
+  },
+  {
+    "id": "gouache_matte",
+    "name": "Gouache Impasto Matte",
+    "category": "2d",
+    "niche": "Biografi tokoh, sejarah peradaban, seni rupa",
+    "swatch": "#E07A5F",
+    "ink": "#FAF7F2",
+    "prompt": "Rich opaque gouache painting, visible tactile brushstrokes, matte velvet finish, warm earthy color palette, painterly 2D illustration, beautiful artistic lighting and depth. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a stylized character painted with thick opaque gouache and visible artistic brushstrokes"
+  },
+  {
+    "id": "collage",
+    "name": "Kolase kertas",
+    "category": "2d",
+    "niche": "Dokumenter, jurnalisme, investigasi",
+    "swatch": "#E9D8BA",
+    "ink": "#1F1D1A",
+    "prompt": "Paper cut-out collage, layered textured paper, vintage photo cutouts, halftone print textures, torn edges, soft shadows between paper layers, editorial documentary style. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a paper cut-out collage figure with textured paper layers"
+  },
+  {
+    "id": "torn_paper_collage",
+    "name": "Kolase Kertas Robek",
+    "category": "2d",
+    "niche": "Skandal politik, dokumen rahasia, kasus hukum",
+    "swatch": "#DDB892",
+    "ink": "#1F1D1A",
+    "prompt": "Tactile paper cut-out collage, torn kraft paper edges showing fiber, layered vintage textured paper, halftone monochrome photo elements, realistic drop shadows between layers, editorial documentary collage aesthetic. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a paper cutout collage figure crafted from textured paper shapes and torn edges"
+  },
+  {
+    "id": "linocut_woodcut",
+    "name": "Cukil Kayu Linocut",
+    "category": "2d",
+    "niche": "Abad pertengahan, mitologi kuno, legenda ksatria",
+    "swatch": "#2B2D2F",
+    "ink": "#E9D8BA",
+    "prompt": "Medieval linocut printmaking art, relief woodblock print style, stark black ink on antique parchment paper, rugged carved groove textures, expressive dramatic medieval aesthetic. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a historical figure depicted in bold linocut relief print style with carved texture lines"
+  },
+  {
+    "id": "scientific_etching",
+    "name": "Etsa Sains Victoria 1800s",
+    "category": "2d",
+    "niche": "Penemuan sains, eksplorasi alam, kedokteran kuno",
+    "swatch": "#D4C5B9",
+    "ink": "#1F1D1A",
+    "prompt": "19th-century scientific encyclopedia etching, exquisite copperplate engraving linework, fine cross-hatching, hand-tinted pale watercolor accents, aged archival paper with subtle foxing. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a dignified historical person drawn in fine copperplate scientific engraving style"
+  },
+  {
+    "id": "impressionist_2d",
+    "name": "Impresionisme Cat Minyak 2D",
+    "category": "2d",
+    "niche": "Filsafat, biografi seniman, renungan kehidupan",
+    "swatch": "#3D5A80",
+    "ink": "#FAF7F2",
+    "prompt": "Post-impressionist oil painting style, vibrant broken brushstrokes, rich chromatic color harmonies, swirling dynamic sky and light, thick artistic paint texture, emotional and expressive 2D painting. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a portrait of a character rendered with expressive impressionist oil brushstrokes"
+  },
+  {
+    "id": "nordic_folk",
+    "name": "Seni Rakyat Nordik",
+    "category": "2d",
+    "niche": "Mitologi Skandinavia, cerita salju, tradisi desa",
+    "swatch": "#1D3557",
+    "ink": "#FAF7F2",
+    "prompt": "Traditional Nordic Scandinavian folk art illustration, symmetrical floral and botanical motifs, stylized animals and figures, rich navy blue, crimson, and snowy white palette, cozy decorative folklore style. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a folklore character dressed in stylized Nordic folk patterns with decorative floral motifs"
+  },
+  {
+    "id": "stained_glass",
+    "name": "Kaca Patri Katedral",
+    "category": "2d",
+    "niche": "Kisah agama, legenda suci, sejarah gereja kuno",
+    "swatch": "#5A189A",
+    "ink": "#FAF7F2",
+    "prompt": "Magnificent stained glass window art, luminous translucent colored glass panels in sapphire, ruby, and gold, thick dark lead came soldering outlines, radiant divine light shining through, cathedral gothic aesthetic. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a majestic figure designed in stained glass window mosaic with thick black lead borders"
+  },
+  {
+    "id": "tarot_mystic",
+    "name": "Kartu Tarot Mistis",
+    "category": "2d",
+    "niche": "Astrologi, ramalan, okultisme, misteri takdir",
+    "swatch": "#240046",
+    "ink": "#FFD166",
+    "prompt": "Esoteric mystical tarot card illustration, intricate golden and black line art, celestial moon and stars symbolism, ornate decorative borders, deep velvet midnight background, arcane medieval gothic allure. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "an enigmatic mystical figure framed like a classic major arcana tarot card"
+  },
+  {
+    "id": "wax_crayon",
+    "name": "Gambar Krayon Lilin",
+    "category": "2d",
+    "niche": "Nostalgia masa kecil, kisah kepolosan, trauma psikologis",
+    "swatch": "#F3C053",
+    "ink": "#1F1D1A",
+    "prompt": "Charming nostalgic wax crayon drawing on heavy tooth sketch paper, waxy uneven coloring texture, naive heartfelt folk style, vibrant colorful crayon marks, innocent and touching visual mood. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a sweet simple character drawn with textured colored wax crayons"
+  },
+  {
+    "id": "noir",
+    "name": "Komik noir",
+    "category": "2d",
+    "niche": "Horor, true crime, detektif",
+    "swatch": "#2F3240",
+    "ink": "#FAF7F2",
+    "prompt": "Dark graphic-novel comic panel, heavy black ink shadows, high contrast, muted palette with a single accent color, dramatic angles, halftone texture, suspenseful mood. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a graphic-novel character drawn with heavy ink shadows"
+  },
+  {
+    "id": "comic_noir_stark",
+    "name": "Noir Hitam Putih Kontras",
+    "category": "2d",
+    "niche": "Kasus mafia, pembunuhan berantai, investigasi gelap",
+    "swatch": "#111111",
+    "ink": "#E63946",
+    "prompt": "Hardboiled graphic novel comic noir panel, extreme stark black and white ink contrast, razor-sharp heavy shadows, pouring rain under a lone streetlamp, single blood-red spot color accent, intense psychological thriller mood. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a trenchcoat-wearing noir figure cast in harsh black and white chiaroscuro shadows"
+  },
+  {
+    "id": "silver_age_comic",
+    "name": "Komik Silver Age 1960s",
+    "category": "2d",
+    "niche": "Superhero klasik, fiksi ilmiah retro, era 1960",
+    "swatch": "#0077B6",
+    "ink": "#FAF7F2",
+    "prompt": "Vintage 1960s Silver Age comic book panel, dynamic Jack Kirby style inking, retro 4-color CMYK printing look with subtle misaligned plates, visible newsprint texture, vintage comic action scene. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a classic 1960s comic book hero with bold muscular ink lines and primary color costume"
+  },
+  {
+    "id": "ligne_claire",
+    "name": "Ligne Claire (Tintin)",
+    "category": "2d",
+    "niche": "Petualangan arkeologi, ekspedisi dunia, geografi",
+    "swatch": "#457B9D",
+    "ink": "#FAF7F2",
+    "prompt": "Franco-Belgian Ligne Claire comic illustration, authentic Hergé Tintin style, uniform monoline ink contours throughout, pure flat colors without gradients or shading, crisp architectural accuracy, timeless adventure mood. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "an adventurous character drawn with clean uniform monoline ink outlines and clear flat colors"
+  },
+  {
+    "id": "modern_graphic_novel",
+    "name": "Graphic Novel Sinematik",
+    "category": "2d",
+    "niche": "Konspirasi militer, spionase, thriller politik",
+    "swatch": "#354F52",
+    "ink": "#FAF7F2",
+    "prompt": "Modern dark cinematic graphic novel panel, digital ink with atmospheric moody lighting, rich teal and muted amber color grading, cinematic letterbox framing, intense and realistic character acting. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a detailed modern graphic novel character with expressive facial inking and cinematic lighting"
+  },
+  {
+    "id": "art_deco_travel",
+    "name": "Poster Wisata Art Deco 1930s",
+    "category": "2d",
+    "niche": "Destinasi dunia, keajaiban alam, sejarah penerbangan",
+    "swatch": "#2A9D8F",
+    "ink": "#FAF7F2",
+    "prompt": "1930s WPA national park retro travel poster, elegant Art Deco geometry, smooth vintage airbrush color gradients, majestic mountain vista, grand scale, timeless heritage travel illustration. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a stylish 1930s traveler depicted in classic Art Deco silhouette and smooth airbrush gradient"
+  },
+  {
+    "id": "constructivist_poster",
+    "name": "Propaganda Konstruktivisme",
+    "category": "2d",
+    "niche": "Perang dingin, revolusi industri, ideologi dunia",
+    "swatch": "#9E2A2B",
+    "ink": "#FAF7F2",
+    "prompt": "Early 20th-century constructivist propaganda art, bold dynamic diagonal geometry, powerful red, black, and cream color palette, heroic angular industrial silhouettes, dramatic low-angle perspective, raw political power. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a determined worker or soldier with bold angular features and heroic posture"
+  },
+  {
+    "id": "psychedelic_70s",
+    "name": "Poster Psikedelik 1970s",
+    "category": "2d",
+    "niche": "Musik 70-an, revolusi budaya, imajinasi surealis",
+    "swatch": "#F72585",
+    "ink": "#FAF7F2",
+    "prompt": "1970s psychedelic pop art poster, Peter Max and Yellow Submarine style, flowing organic wavy contours, kaleidoscopic vibrant rainbow color palette, surreal dreamscape, retro hippie euphoria. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a groovy stylized 1970s character with flowing contours and vibrant psychedelic attire"
+  },
+  {
+    "id": "street_stencil",
+    "name": "Stensil Street Art Dinding",
+    "category": "2d",
+    "niche": "Kritik sosial, rahasia korporasi, revolusi urban",
+    "swatch": "#495057",
+    "ink": "#FAF7F2",
+    "prompt": "Urban street art stencil mural on a weathered cracked concrete wall, crisp black spray-paint stencil contours, subtle spray mist overspray, realistic rough brick and plaster texture, impactful social commentary artwork. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a stencil silhouette figure spray-painted on a concrete urban wall with sharp cut edges"
+  },
+  {
+    "id": "art_nouveau_mucha",
+    "name": "Art Nouveau Alphonse Mucha",
+    "category": "2d",
+    "niche": "Kisah ratu, mitologi kecantikan, mode klasik",
+    "swatch": "#BC6C25",
+    "ink": "#FAF7F2",
+    "prompt": "Alphonse Mucha Art Nouveau masterpiece illustration, elegant flowing whiplash curves, ornate decorative floral halo frame, intricate sinuous hair, soft gold, sage, and dusty rose color palette, ethereal belle époque grandeur. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "an elegant figure with flowing hair surrounded by ornate Art Nouveau botanical framing"
+  },
+  {
+    "id": "junji_ito_horror",
+    "name": "Horor Manga Junji Ito",
+    "category": "2d",
+    "niche": "Cerita horor seram, creepypasta, misteri kutukan",
+    "swatch": "#0D1117",
+    "ink": "#FAF7F2",
+    "prompt": "Junji Ito psychological horror manga panel, obsessive ultra-dense pen-and-ink crosshatching, chilling deep black shadows, unsettling eerie atmosphere, hyper-detailed macabre textures, disturbing psychological dread. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a pale haunted character with wide unsettling eyes and dense ink hatching shadows"
+  },
+  {
+    "id": "pixel",
+    "name": "Pixel art 16-bit",
+    "category": "2d",
+    "niche": "Gaming, nostalgia, review game",
+    "swatch": "#8FD694",
+    "ink": "#1F1D1A",
+    "prompt": "Detailed 16-bit pixel art scene, crisp pixels, limited retro palette, video game aesthetic, no blur. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a 16-bit pixel art character sprite"
+  },
+  {
+    "id": "pixel_8bit",
+    "name": "8-Bit Retro Arcade Pixel",
+    "category": "2d",
+    "niche": "Sejarah game arcade, konsol jadul, nostalgia 80s",
+    "swatch": "#38B000",
+    "ink": "#1F1D1A",
+    "prompt": "Authentic 8-bit retro video game pixel art scene, crisp square pixels on a visible grid, limited NES-era 16-color palette, nostalgic 1980s side-scroller game visual, pure retro gaming charm. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "an 8-bit chunky pixel art character sprite with visible square pixels"
+  },
+  {
+    "id": "gameboy_retro",
+    "name": "Game Boy 4-Warna Hijau",
+    "category": "2d",
+    "niche": "Nostalgia game portabel, fakta retro 1989",
+    "swatch": "#8BAC0F",
+    "ink": "#0F380F",
+    "prompt": "Authentic original Game Boy handheld screen art, strictly four shades of olive greenish-yellow monochrome palette (#0f380f, #306230, #8bac0f, #9bbc0f), crisp chunky pixels, classic dot-matrix LCD screen look. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a character sprite rendered strictly in the 4-shade Game Boy greenish-yellow palette"
+  },
+  {
+    "id": "technical_blueprint",
+    "name": "Cetak Biru Arsitektur",
+    "category": "2d",
+    "niche": "Bedah teknologi, kapal, pesawat, mesin rahasia",
+    "swatch": "#00296B",
+    "ink": "#00B4D8",
+    "prompt": "Engineering architectural blueprint drawing, crisp cyan and white technical draft lines, dark Prussian blue grid paper background, precise schematic orthographic projections, detailed technical drafting aesthetic. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "an anatomical or robotic figure drawn in white line schematic blueprint drafting style"
+  },
+  {
+    "id": "origami_geometric",
+    "name": "Origami Kertas Geometris",
+    "category": "2d",
+    "niche": "Kreativitas, matematika, kerajinan tangan",
+    "swatch": "#FFB703",
+    "ink": "#1F1D1A",
+    "prompt": "2D geometric folded papercraft illustration, sharp angular origami facets, paper creases with subtle lighting, tactile matte colored paper texture, modern playful craft aesthetic. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a stylized origami figure composed of clean geometric paper fold facets"
+  },
+  {
+    "id": "synthwave_80s",
+    "name": "Synthwave Outrun Neon",
+    "category": "2d",
+    "niche": "Musik synthwave, otomotif retro, fiksi 80-an",
+    "swatch": "#7209B7",
+    "ink": "#4CC9F0",
+    "prompt": "1980s synthwave outrun aesthetic vector frame, glowing neon grid horizon, giant sunset sun with horizontal blinds stripes, deep purple and hot pink night sky, sleek retro-futuristic mood. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a stylish 80s character wearing cool aviators with neon purple and cyan rim reflections"
+  },
+  {
+    "id": "burtonesque_gothic",
+    "name": "Gotik Tim Burton",
+    "category": "2d",
+    "niche": "Misteri dongeng gelap, karakter penyendiri, Halloween",
+    "swatch": "#212529",
+    "ink": "#E9ECEF",
+    "prompt": "Tim Burtonesque dark gothic storybook illustration, whimsical spindly trees with spiral branches, striped crooked architecture, pale melancholy character with large sunken eyes, expressive scratchy ink hatching, charming dark fairytale mood. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a tall spindly character with large expressive sunken eyes and quirky gothic attire"
+  },
+  {
+    "id": "fauvism_art",
+    "name": "Fauvisme Warna Liar",
+    "category": "2d",
+    "niche": "Sejarah seni, ekspresi jiwa, kisah bebas",
+    "swatch": "#FB8500",
+    "ink": "#1F1D1A",
+    "prompt": "Fauvist art movement painting, wild unnatural vibrant colors, bold spontaneous brushwork, bright emerald green skies and warm scarlet landscapes, raw emotional chromatic intensity, Henri Matisse inspired 2D art. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a figure painted with bold wild Fauvist colors and expressive unconventional skin tones"
+  },
+  {
+    "id": "cyber_wireframe",
+    "name": "Cyberspace Wireframe 2D",
+    "category": "2d",
+    "niche": "Dark web, jaringan AI rahasia, internet protokol",
+    "swatch": "#050505",
+    "ink": "#00F5D4",
+    "prompt": "Futuristic cyberspace wireframe vector art, glowing neon cyan and emerald green vector polygon grid lines, infinite deep black void, digital network matrix nodes, sleek minimalist cyber aesthetics. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a human silhouette made of glowing green geometric wireframe mesh lines"
+  },
+  {
+    "id": "korean_pastel_illustration",
+    "name": "Pastel Minimalis Korea",
+    "category": "2d",
+    "niche": "Gaya hidup, keuangan anak muda, kisah cinta santai",
+    "swatch": "#FDE2E4",
+    "ink": "#1F1D1A",
+    "prompt": "Modern Korean lifestyle book illustration, gentle warm brown pencil outlines, soft minimalist pastel color washes in cream, peach, and sage, cozy warm aesthetic, clean uncluttered composition. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a modern friendly character drawn with gentle brown pencil contours and soft warm pastel fills"
+  },
+  {
+    "id": "mozarabic_art",
+    "name": "Mozarabic Art (Gaya Mozarabik)",
+    "category": "2d",
+    "niche": "Spanyol, Abad 9-11",
+    "swatch": "#A67B5B",
+    "ink": "#1F1D1A",
+    "prompt": "Mozarabic manuscript illumination style, vibrant earthy colors, intricate interlaced patterns, gold leaf accents, stylized figures with flat perspective, religious motifs, intricate border designs. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a stylized figure in flat medieval illumination, ornate decorative patterns"
+  },
+  {
+    "id": "gothic_art",
+    "name": "Gothic Art (Seni Gotik)",
+    "category": "2d",
+    "niche": "Eropa, Abad 12-15",
+    "swatch": "#4B4B4B",
+    "ink": "#FFFFFF",
+    "prompt": "Gothic illuminated manuscript page, deep rich colors, gold leaf, ornate filigree, towering pointed arches, stained glass motifs, stylized human figures in elongated proportions, detailed marginalia. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a medieval figure with elongated proportions and ornate gothic detailing"
+  },
+  {
+    "id": "medieval_tapestry",
+    "name": "Medieval Tapestry & Chronicle",
+    "category": "2d",
+    "niche": "Eropa, Abad Pertengahan",
+    "swatch": "#7A5230",
+    "ink": "#FAF7F2",
+    "prompt": "Medieval tapestry scene, woven texture, earthy muted palette, heroic figures and mythic beasts, detailed border pattern, stylized storytelling composition. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a heroic medieval figure rendered as a tapestry weave"
+  },
+  {
+    "id": "baghdad_school_faceless",
+    "name": "Baghdad School (Faceless)",
+    "category": "2d",
+    "niche": "Abad 13",
+    "swatch": "#C19A6B",
+    "ink": "#1F1D1A",
+    "prompt": "Abbasid Baghdad School illustration, elegant flat figures without facial features, flowing robes, delicate arabesque patterns, gold accents, soft pastel background, scholarly scene. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a faceless elegant figure in flowing Abbasid attire"
+  },
+  {
+    "id": "baghdad_school",
+    "name": "Baghdad School (Ilustrasi Abbasiyah)",
+    "category": "2d",
+    "niche": "Abad 13",
+    "swatch": "#C19A6B",
+    "ink": "#1F1D1A",
+    "prompt": "Abbasid Baghdad School illustration, detailed facial features, ornate calligraphy, vibrant colors, scholarly figures, intricate arabesque borders, historic manuscript style. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a detailed figure with expressive face in Abbasid style"
+  },
+  {
+    "id": "wayang_beber",
+    "name": "Wayang Beber (Gulungan Klasik)",
+    "category": "2d",
+    "niche": "Indonesia, Abad 13-16",
+    "swatch": "#8B4513",
+    "ink": "#FAF7F2",
+    "prompt": "Javanese Wayang Beber scroll painting, stylized elongated characters, traditional batik patterns, earthy pigments, mythic scene, gold leaf highlights, ancient storytelling vibe. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a stylized Javanese wayang character with batik patterns"
+  },
+  {
+    "id": "persian_miniature_faceless",
+    "name": "Persian Miniature (Faceless)",
+    "category": "2d",
+    "niche": "Persia, Abad 13-17",
+    "swatch": "#D4A190",
+    "ink": "#1F1D1A",
+    "prompt": "Persian miniature painting, elegant faceless figures, intricate floral borders, rich jewel tones, detailed architecture, poetic composition, courtly scene. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a faceless elegant figure in Persian court attire"
+  },
+  {
+    "id": "persian_miniature",
+    "name": "Persian Miniature (Negargari)",
+    "category": "2d",
+    "niche": "Persia, Abad 13-17",
+    "swatch": "#D4A190",
+    "ink": "#1F1D1A",
+    "prompt": "Persian miniature painting, expressive facial features, lavish costumes, gold filigree, detailed garden background, vibrant pigments, narrative storytelling. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a detailed Persian court figure with expressive face"
+  },
+  {
+    "id": "italian_renaissance",
+    "name": "Italian Renaissance (Renaisans Italia)",
+    "category": "2d",
+    "niche": "Italia, Abad 15-16",
+    "swatch": "#C0A080",
+    "ink": "#1F1D1A",
+    "prompt": "Italian Renaissance painting, chiaroscuro lighting, realistic anatomy, harmonious composition, classical architecture, rich oil colors, masterful depth. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a realistic Renaissance figure with classical pose"
+  },
+  {
+    "id": "ottoman_miniature",
+    "name": "Ottoman Miniature & Iznik Ceramics",
+    "category": "2d",
+    "niche": "Turki, Abad 15-18",
+    "swatch": "#D9B99B",
+    "ink": "#1F1D1A",
+    "prompt": "Ottoman miniature illustration, intricate patterns, vivid Iznik tile colors, delicate brushwork, courtly figures, decorative borders, historic Persian-Ottoman style. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "an Ottoman court figure with ornate tile background"
+  },
+  {
+    "id": "yamato_e_faceless",
+    "name": "Yamato-e & Rinpa (Faceless)",
+    "category": "2d",
+    "niche": "Jepang, Abad 10-17",
+    "swatch": "#B0C4DE",
+    "ink": "#1F1D1A",
+    "prompt": "Japanese Yamato-e painting, stylized faceless figures, flowing kimono patterns, delicate brushstroke, soft pastel background, narrative scroll style. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a faceless Japanese figure in traditional kimono"
+  },
+  {
+    "id": "yamato_e",
+    "name": "Yamato-e & Rinpa School",
+    "category": "2d",
+    "niche": "Jepang, Abad 10-17",
+    "swatch": "#B0C4DE",
+    "ink": "#1F1D1A",
+    "prompt": "Japanese Yamato-e painting, detailed facial features, elegant court scenes, seasonal nature motifs, subtle ink wash, refined composition. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a Japanese court figure with delicate expression"
+  },
+  {
+    "id": "spanish_golden_age",
+    "name": "Spanish Golden Age (Zaman Emas Spanyol)",
+    "category": "2d",
+    "niche": "Spanyol, Abad 17",
+    "swatch": "#C19A6B",
+    "ink": "#1F1D1A",
+    "prompt": "Spanish Golden Age Baroque painting, dramatic chiaroscuro, rich textures, religious or regal subject, deep shadows, luminous highlights, masterful brushwork. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a dramatic Spanish Baroque figure with strong lighting"
+  },
+  {
+    "id": "dutch_golden_age",
+    "name": "Dutch Golden Age (Zaman Emas Belanda)",
+    "category": "2d",
+    "niche": "Belanda, Abad 17",
+    "swatch": "#E3C16F",
+    "ink": "#1F1D1A",
+    "prompt": "Dutch Golden Age interior scene, natural light through windows, detailed still life, realistic textures, warm palette, meticulous detail, genre painting style. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a Dutch merchant in a sunlit interior"
+  },
+  {
+    "id": "baroque_art",
+    "name": "Baroque Art (Seni Barok)",
+    "category": "2d",
+    "niche": "Eropa, Abad 17",
+    "swatch": "#87431D",
+    "ink": "#FAF7F2",
+    "prompt": "Baroque dramatic painting, high contrast lighting, dynamic composition, swirling drapery, intense emotions, rich colors, theatrical atmosphere. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a dramatic Baroque hero in dynamic pose"
+  },
+  {
+    "id": "classicism",
+    "name": "Classicism (Klasikisme)",
+    "category": "2d",
+    "niche": "Eropa, Abad 17",
+    "swatch": "#A67B5B",
+    "ink": "#1F1D1A",
+    "prompt": "Classical painting, balanced composition, idealized anatomy, muted pastel palette, neoclassical architecture, serene mood. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a poised classical figure with marble columns"
+  },
+  {
+    "id": "mughal_imperial_miniature",
+    "name": "Mughal Imperial Chronicle Miniature",
+    "category": "2d",
+    "niche": "India, Abad 16-17",
+    "swatch": "#D4A190",
+    "ink": "#1F1D1A",
+    "prompt": "Mughal miniature painting, opulent royal court, fine brushwork, intricate patterns, vibrant pigments, delicate gold detailing, narrative historic scene. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a Mughal emperor in regal attire with intricate background"
+  },
+  {
+    "id": "ukiyo_e_faceless",
+    "name": "Ukiyo-e Era Edo (Faceless)",
+    "category": "2d",
+    "niche": "Jepang, Abad 17-19",
+    "swatch": "#F4A261",
+    "ink": "#1F1D1A",
+    "prompt": "Ukiyo-e woodblock print style, stylized faceless figures, bold outlines, flat color fields, traditional Japanese motifs, wave patterns, serene composition. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a faceless Japanese figure in traditional ukiyo-e pose"
+  },
+  {
+    "id": "ukiyo_e_edo",
+    "name": "Ukiyo-e Era Edo (Non-Faceless)",
+    "category": "2d",
+    "niche": "Jepang, Abad 17-19",
+    "swatch": "#E76F51",
+    "ink": "#FAF7F2",
+    "prompt": "Ukiyo-e woodblock print, expressive facial features, vibrant ukiyo-e color palette, detailed background, iconic Japanese scenes, elegant composition. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a Japanese figure with expressive face in ukiyo-e style"
+  },
+  {
+    "id": "ukiyo_e_adaptive_faceless",
+    "name": "Ukiyo-e Sejarah Adaptif (Faceless)",
+    "category": "2d",
+    "niche": "Sejarah Nusantara & dunia, kerajaan, kronik",
+    "swatch": "#D48344",
+    "ink": "#FAF7F2",
+    "prompt": "Traditional Edo-period Ukiyo-e woodblock print art style applied adaptively to world history. Bold black hand-carved woodcut contour lines, flat earthy mineral pigment color fills, authentic aged washi paper texture, subtle relief print carving grooves. ALL characters are stylized FACELESS figures with smooth blank heads without eyes, nose, or mouth. Characters, traditional costumes, architecture, weapons, and cultural setting dynamically adapt to the specific historical region and era being depicted (such as ancient Indonesian kingdoms with traditional batik and keris, or other world civilizations), rendered strictly in authentic Ukiyo-e woodblock graphic printmaking technique. No Japanese kimono or Japanese samurai unless the scene is specifically set in Japan. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a faceless historical figure wearing authentic period-accurate cultural attire, rendered in bold Ukiyo-e woodblock print contour lines and flat mineral colors"
+  },
+  {
+    "id": "ukiyo_e_universal_faceless",
+    "name": "Ukiyo-e Lintas Cerita (Faceless)",
+    "category": "2d",
+    "niche": "Bebas mengikuti topik, sejarah & mitologi global",
+    "swatch": "#D08C51",
+    "ink": "#FAF7F2",
+    "prompt": "Traditional Edo-period Ukiyo-e woodcut printmaking medium applied dynamically to whatever story and historical civilization is being narrated. Bold black hand-carved woodblock contour lines, flat layered mineral pigment colors, subtle antique washi paper fiber texture, graphic relief-print aesthetic. ALL characters are stylized FACELESS figures with smooth blank heads (no facial features, no eyes, no mouth). Characters, traditional costumes, ethnic clothing, architecture, weapons, and environment dynamically and accurately reflect the specific culture, nation, and historical era of the scene (e.g. ancient Middle East, Rome, Europe, Nusantara, Americas, or Asia), strictly rendered in woodblock print art style without imposing Japanese elements like kimono or samurai unless the scene is set in Japan. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a faceless historical character in period-accurate clothing from the scene culture, rendered in bold Ukiyo-e woodcut contour lines"
+  },
+  {
+    "id": "rococo_art",
+    "name": "Rococo Art (Seni Rokoko)",
+    "category": "2d",
+    "niche": "Eropa, Abad 18",
+    "swatch": "#F7C59F",
+    "ink": "#1F1D1A",
+    "prompt": "Rococo painting, pastel colors, ornate decorative flourishes, elegant aristocratic figures, light airy composition, delicate brushwork. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a graceful aristocratic figure in rococo attire"
+  },
+  {
+    "id": "neoclassicism",
+    "name": "Neoclassicism (Neoklasikisme)",
+    "category": "2d",
+    "niche": "Eropa, Abad 18-19",
+    "swatch": "#C0A080",
+    "ink": "#1F1D1A",
+    "prompt": "Neoclassical painting, heroic classical poses, clean lines, muted palette, marble columns, idealized anatomy, historic mythic subject. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a heroic figure with classical drapery and marble backdrop"
+  },
+  {
+    "id": "academic_history_painting",
+    "name": "Academic History Painting",
+    "category": "2d",
+    "niche": "Eropa, Abad 18-19",
+    "swatch": "#8B5E3C",
+    "ink": "#FAF7F2",
+    "prompt": "Academic history painting, grand scale, detailed realistic figures, dramatic lighting, narrative of historic event, rich palette, precise composition. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a historical hero in a grand academic composition"
+  },
+  {
+    "id": "romanticism",
+    "name": "Romanticism (Romantisisme)",
+    "category": "2d",
+    "niche": "Eropa, Abad 19",
+    "swatch": "#5E503F",
+    "ink": "#FAF7F2",
+    "prompt": "Romanticism painting, turbulent dramatic sky, sublime nature, emotional intensity, rich brushwork, heroic individualism, moody atmospheric lighting. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a passionate romantic hero gazing into the tempestuous landscape"
+  },
+  {
+    "id": "orientalism_faceless",
+    "name": "Orientalism (Faceless)",
+    "category": "2d",
+    "niche": "Eropa, Abad 19",
+    "swatch": "#DDA15E",
+    "ink": "#1F1D1A",
+    "prompt": "19th-century Orientalist painting, stylized faceless figures in desert bazaars and courtyards, warm golden hour light, rich textiles, exotic architecture, painterly realism. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a faceless traveler in exotic draped robes and turban"
+  },
+  {
+    "id": "impressionism_classic",
+    "name": "Impressionism (Impresionisme Klasik)",
+    "category": "2d",
+    "niche": "Prancis, Abad 19",
+    "swatch": "#70A9A1",
+    "ink": "#1F1D1A",
+    "prompt": "French Impressionism painting, quick spontaneous brushstrokes, vibrant natural daylight, open-air atmosphere, dappled shadows, rich pure color dabs. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a Parisian figure in dappled sunlight with impressionist brush dabs"
+  },
+  {
+    "id": "art_nouveau_classic",
+    "name": "Art Nouveau (Seni Nouveau Klasik)",
+    "category": "2d",
+    "niche": "Eropa, Abad 19-20",
+    "swatch": "#9381FF",
+    "ink": "#FAF7F2",
+    "prompt": "Art Nouveau fine art, sinuous organic whip lines, stylized floral arabesques, elegant elongated silhouettes, decorative gold filigree, turn-of-century aesthetic. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "an elegant figure with flowing organic hair and floral decorative motifs"
+  },
+  {
+    "id": "pre_raphaelite",
+    "name": "Pre-Raphaelite Brotherhood",
+    "category": "2d",
+    "niche": "Inggris, Abad 19",
+    "swatch": "#2D6A4F",
+    "ink": "#FAF7F2",
+    "prompt": "Pre-Raphaelite Brotherhood painting, luminous jewel tones, meticulous botanical realism, medieval romantic atmosphere, flowing auburn hair, literary and mythic themes. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a radiant figure with flowing auburn hair and richly detailed embroidered robe"
+  },
+  {
+    "id": "fauvism_classic",
+    "name": "Fauvism (Fauvisme Klasik)",
+    "category": "2d",
+    "niche": "Prancis, Awal Abad 20",
+    "swatch": "#FF5400",
+    "ink": "#FAF7F2",
+    "prompt": "Fauvism painting, wildly unnatural vivid colors, bold painterly strokes, bright emerald skies and crimson ground, raw emotional color intensity, expressive shapes. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a figure painted with expressive wild fauvist skin tones and vibrant colors"
+  },
+  {
+    "id": "cubism",
+    "name": "Cubism (Kubisme)",
+    "category": "2d",
+    "niche": "Eropa, Awal Abad 20",
+    "swatch": "#9C6644",
+    "ink": "#FAF7F2",
+    "prompt": "Cubism art movement painting, fragmented geometric planes, multiple simultaneous perspectives, deconstructed human form, earthy ochre and grey tones, analytic abstract composition. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a geometric deconstructed figure viewed from multiple angles simultaneously"
+  },
+  {
+    "id": "surrealism",
+    "name": "Surrealism (Surealisme)",
+    "category": "2d",
+    "niche": "Eropa, Abad 20",
+    "swatch": "#3D5A80",
+    "ink": "#FAF7F2",
+    "prompt": "Surrealist masterpiece, dreamlike impossible landscape, melting objects, floating symbols, deep uncanny shadows, hyperrealistic precision applied to bizarre subconscious visions. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "an enigmatic figure with surreal floating elements and dreamlike anatomy"
+  },
+  {
+    "id": "german_expressionism",
+    "name": "German Expressionism",
+    "category": "2d",
+    "niche": "Jerman, Awal Abad 20",
+    "swatch": "#2B2D42",
+    "ink": "#FAF7F2",
+    "prompt": "German Expressionist woodcut and painting, jagged distorted angles, intense emotional anguish, harsh high-contrast black shadows, brooding psychological atmosphere. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a figure with sharp angular features and intense haunting expressive eyes"
+  },
+  {
+    "id": "socialist_realism",
+    "name": "Socialist Realism (Realisme Sosialis)",
+    "category": "2d",
+    "niche": "Uni Soviet, 1930-1980",
+    "swatch": "#D90429",
+    "ink": "#FAF7F2",
+    "prompt": "Socialist Realism heroic propaganda painting, monumentally proportioned workers, triumphant forward momentum, sun-drenched industrial landscape, bold crimson banners, optimistic heroic ideal. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a strong heroic worker figure looking forward toward a bright future"
+  },
+  {
+    "id": "sumi_e",
+    "name": "Sumi-e / Suiboku-ga (Tinta Zen)",
+    "category": "2d",
+    "niche": "Jepang, Abad 14-16",
+    "swatch": "#343A40",
+    "ink": "#FAF7F2",
+    "prompt": "Traditional Japanese Sumi-e ink wash painting, dynamic black brush strokes on washi paper, beautiful ink gradients, intentional negative space (Ma), misty mountains and bamboo, Zen minimalist spirit. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a minimalist figure captured in swift expressive black ink brushstrokes"
+  },
+  {
+    "id": "gongbi",
+    "name": "Gongbi (Kuas Halus Istana Tiongkok)",
+    "category": "2d",
+    "niche": "Tiongkok, Dinasti Tang-Ming",
+    "swatch": "#B7094C",
+    "ink": "#FAF7F2",
+    "prompt": "Traditional Chinese Gongbi painting, meticulous fine brushwork, precise delicate ink outlines, subtle layered color washes on vintage silk scroll, imperial elegance, exquisite botanical and costume detail. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "an imperial Chinese court figure drawn with ultra-precise delicate ink contours and layered silk washes"
+  },
+  {
+    "id": "joseon_genre_painting",
+    "name": "Joseon Genre Painting (Pungsok-do)",
+    "category": "2d",
+    "niche": "Korea, Dinasti Joseon",
+    "swatch": "#6C757D",
+    "ink": "#FAF7F2",
+    "prompt": "Korean Joseon dynasty folk genre painting (Pungsok-do), Danwon Kim Hong-do style, expressive brushwork, humorous lively everyday life scenes, traditional hanbok and gat hats, soft earthy pigments on mulberry paper. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a Korean character in traditional white hanbok and black gat hat rendered in lively ink wash"
+  },
+  {
+    "id": "mesoamerican_codices",
+    "name": "Mesoamerican Codices (Aztec & Maya)",
+    "category": "2d",
+    "niche": "Amerika Kuno",
+    "swatch": "#BC4749",
+    "ink": "#FAF7F2",
+    "prompt": "Pre-Columbian Mesoamerican pictographic codex, Aztec and Maya manuscript style, bold black contour lines, flat primary mineral colors (red, ochre, turquoise, jade), stylized profile poses, glyphs and feathered headdresses on deerskin parchment. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a stylized Aztec or Maya figure in profile with feathered headdress and traditional codex glyphs"
+  },
+  {
+    "id": "veiled_miniature_faceless",
+    "name": "Veiled / Aniconic Miniature (Faceless)",
+    "category": "2d",
+    "niche": "Persia & Ottoman, Abad 14-17",
+    "swatch": "#6A0572",
+    "ink": "#FAF7F2",
+    "prompt": "Aniconic Ottoman and Persian manuscript miniature, sacred figures depicted with pure white veils covering their faces and radiating golden flame halos, intricate floral arabesque borders, lapis lazuli and gold leaf pigments. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a noble figure wearing a flowing white veil over the face with a radiant golden flame aura"
+  },
+  {
+    "id": "animation3d",
+    "name": "Animasi 3D",
+    "category": "3d",
+    "niche": "Fabel, keluarga, anak",
+    "swatch": "#FFD66B",
+    "ink": "#1F1D1A",
+    "prompt": "3D animated feature film render, stylized characters with big expressive faces, soft global illumination, subsurface scattering, vibrant colors, cinematic depth of field. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a stylized 3D animated film character with an expressive face"
+  },
+  {
+    "id": "clay",
+    "name": "Claymation",
+    "category": "3d",
+    "niche": "Komedi, cerita anak",
+    "swatch": "#F4A988",
+    "ink": "#1F1D1A",
+    "prompt": "Claymation stop-motion scene, handcrafted plasticine characters and miniature sets, visible fingerprints and clay texture, soft studio lighting. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a handcrafted plasticine clay character"
+  },
+  {
+    "id": "lowpoly",
+    "name": "Low-poly 3D",
+    "category": "3d",
+    "niche": "Teknologi, sains",
+    "swatch": "#A7C7E7",
+    "ink": "#1F1D1A",
+    "prompt": "Low-poly 3D render, faceted geometric shapes, flat-shaded polygons, clean pastel colors, soft ambient lighting. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a low-poly 3D character with faceted shapes"
+  },
+  {
+    "id": "diorama",
+    "name": "Diorama miniatur",
+    "category": "3d",
+    "niche": "Sejarah, kota, perang",
+    "swatch": "#C9D9A6",
+    "ink": "#1F1D1A",
+    "prompt": "Tilt-shift miniature diorama, tiny detailed 3D figures and buildings, shallow depth of field, soft daylight, toy-like scale. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a tiny detailed miniature figurine"
+  },
+  {
+    "id": "cinematic",
+    "name": "Sinematik realistis",
+    "category": "realistis",
+    "niche": "Misteri, sejarah, drama",
+    "swatch": "#56607A",
+    "ink": "#FAF7F2",
+    "prompt": "Photorealistic cinematic film still, dramatic natural lighting, shallow depth of field, anamorphic lens look, rich color grading, subtle 35mm film grain. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a photorealistic person, cinematic lighting"
+  },
+  {
+    "id": "documentary",
+    "name": "Foto dokumenter",
+    "category": "realistis",
+    "niche": "Fakta, berita, alam",
+    "swatch": "#8A9A7B",
+    "ink": "#FAF7F2",
+    "prompt": "Realistic documentary photograph, natural light, authentic details, candid composition, high detail, true-to-life colors. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a realistic documentary portrait of a person"
+  },
+  {
+    "id": "archival",
+    "name": "Arsip sejarah",
+    "category": "realistis",
+    "niche": "Sejarah, perang, tokoh",
+    "swatch": "#B9A488",
+    "ink": "#1F1D1A",
+    "prompt": "Vintage archival photograph, faded sepia or black and white, film grain, light scratches and dust, historical documentary look. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "a person in a vintage archival sepia photograph"
+  },
+  {
+    "id": "epic",
+    "name": "Fantasi epik",
+    "category": "realistis",
+    "niche": "Mitologi, legenda",
+    "swatch": "#6C5B8E",
+    "ink": "#FAF7F2",
+    "prompt": "Epic realistic fantasy concept art, highly detailed, volumetric light, grand scale, painterly realism, cinematic composition. No text, no letters, no captions, no watermark, no logo.",
+    "characterHint": "an epic realistic fantasy character, concept art"
+  }
+]
