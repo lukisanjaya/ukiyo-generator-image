@@ -73,7 +73,7 @@ def main():
             "steps": args.steps,
             "seed": args.seed
         }
-        url = f"{args.api_url.rstrip('/')}/samples/generate/{style_id}"
+        url = f"{args.api_url.rstrip('/')}/generate-sample/{style_id}"
         req = urllib.request.Request(
             url,
             data=json.dumps(payload).encode("utf-8"),

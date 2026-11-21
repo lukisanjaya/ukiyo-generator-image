@@ -434,7 +434,7 @@ async def generate(data: GenerateRequest, request: Request):
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@app.post("/samples/generate/{style_id}")
+@app.post("/generate-sample/{style_id}")
 async def generate_sample(style_id: str, data: SampleGenerateRequest, request: Request):
     """Menghasilkan gambar sample untuk satu style_id tertentu dan menyimpannya di samples/{style_id}.png"""
     if pipe is None:
