@@ -1,0 +1,20 @@
+[Unit]
+Description=Ukiyo-e Image Generator FastAPI Service
+After=network.target
+
+[Service]
+Type=simple
+User=dev
+WorkingDirectory=/home/dev/ukiyo-generator
+Environment="PATH=/home/dev/ukiyo-generator/venv/bin:/usr/local/bin:/usr/bin:/bin"
+Environment="CPU_THREADS=4"
+ExecStart=/home/dev/ukiyo-generator/venv/bin/uvicorn app:app --host 0.0.0.0 --port 8000
+Restart=always
+RestartSec=5
+
+# Batas memori untuk menjaga VPS 8 GB agar tidak OOM
+MemoryHigh=6G
+MemoryMax=7G
+
+[Install]
+WantedBy=multi-user.target

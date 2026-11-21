@@ -1,0 +1,23 @@
+###
+POST http://localhost:8080/tts 
+Content-Type: application/json
+
+{
+  "text":"Selamat datang di FaktaPedia, channel edukasi dan fakta menarik.",
+  "voice":"/data/ref/clones/Denas - High class catchy storyteller_pvc_s50_sim75_v4.mp3",
+  "takes": 1
+}
+
+
+
+
+####
+curl -X POST http://localhost:8080/tts \                                 
+-H 'content-type: application/json' \                                  
+-d '{
+"text":"Selamat datang di FaktaPedia, channel edukasi dan fakta      
+menarik.",
+"voice":"/home/dev/www/kanda/laras-tts/data/ref/denas.mp3",          
+"takes": 1
+}' \ 
+-o hasil_pratama.wav
