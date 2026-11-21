@@ -624,6 +624,21 @@
             Pilih style di atas untuk melihat prompt...
           </div>
           
+          <!-- Sample Visual Preview Box -->
+          <div id="samplePreviewBox" style="margin: 10px 0; padding: 10px; background: rgba(0,0,0,0.3); border-radius: 8px; border: 1px solid rgba(255,255,255,0.12); display: flex; gap: 12px; align-items: center;">
+            <div style="width: 68px; height: 102px; border-radius: 6px; overflow: hidden; background: #0a0a0f; flex-shrink: 0; position: relative; border: 1px solid rgba(255,255,255,0.2); box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
+              <img id="samplePreviewImg" src="" alt="Sample Preview" style="width:100%; height:100%; object-fit: cover; display: none; cursor: pointer;" onclick="window.open(this.src, '_blank')">
+              <div id="samplePlaceholder" style="width:100%; height:100%; display: flex; align-items: center; justify-content: center; font-size: 10px; text-align: center; color: var(--muted-text); padding: 4px; line-height: 1.2;">
+                🖼️ Belum ada sample
+              </div>
+            </div>
+            <div style="flex: 1; font-size: 12px; color: #cbd5e1; line-height: 1.4;">
+              <div style="font-weight: 600; color: #93c5fd; margin-bottom: 2px;">Contoh Visual Style</div>
+              <div id="sampleStatusText" style="font-size: 11px; color: var(--muted-text); margin-bottom: 6px;">Sample perbandingan prompt standar.</div>
+              <button type="button" id="btnViewSampleFull" style="display:none; padding: 4px 10px; font-size: 11px; background: rgba(59,130,246,0.2); border: 1px solid #3b82f6; color: #93c5fd; border-radius: 4px; cursor: pointer;" onclick="window.open(document.getElementById('samplePreviewImg').src, '_blank')">🔍 Perbesar Sample</button>
+            </div>
+          </div>
+          
           <div class="style-action-row">
             <button type="button" class="btn-copy-style" id="btnCopyStyle" onclick="copyCurrentStylePrompt()">
               📋 Salin Style Prompt
@@ -839,9 +854,29 @@
       document.getElementById('styleNameDisplay').innerText = st.name;
       document.getElementById('styleNicheDisplay').innerText = st.niche || '';
       document.getElementById('stylePromptPreview').innerText = st.prompt;
-      document.getElementById('selectedCategoryBadge').innerText = st.category.toUpperCase();
+      document.getElementById('selectedCategoryBadge').innerText = (st.category || '2D').toUpperCase();
       if (st.swatch) {
         document.getElementById('styleSwatchDot').style.background = st.swatch;
+      }
+
+      // Update Sample Preview Image
+      const sampleImg = document.getElementById('samplePreviewImg');
+      const sampleHolder = document.getElementById('samplePlaceholder');
+      const btnViewFull = document.getElementById('btnViewSampleFull');
+      const sampleStatus = document.getElementById('sampleStatusText');
+
+      if (st.sample_url) {
+        sampleImg.src = st.sample_url;
+        sampleImg.style.display = 'block';
+        sampleHolder.style.display = 'none';
+        btnViewFull.style.display = 'inline-block';
+        sampleStatus.innerText = 'Contoh visual resmi dari style ini.';
+      } else {
+        sampleImg.src = '';
+        sampleImg.style.display = 'none';
+        sampleHolder.style.display = 'flex';
+        btnViewFull.style.display = 'none';
+        sampleStatus.innerText = 'Sample untuk style ini belum di-generate.';
       }
     }
 
